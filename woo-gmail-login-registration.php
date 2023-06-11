@@ -10,7 +10,7 @@ License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 Text Domain: woocommerce-gmail-login
 Domain Path: /languages
-GitHub Plugin URI: de-er-kid/woo-off-sale-percentage
+GitHub Plugin URI: de-er-kid/woo-gmail-login-registration
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
