@@ -27,7 +27,7 @@ class WooCommerce_Gmail_Login {
         add_action( 'init', array( $this, 'process_gmail_login' ) );
 
         // Add Gmail Signup button to WooCommerce Registration Form
-        add_action( 'woocommerce_register_form', array( $this, 'add_gmail_signup_button' ) );
+        add_action( 'woocommerce_register_form_end', array( $this, 'add_gmail_signup_button' ) );
 
         // Handle Gmail Signup
         add_action( 'init', array( $this, 'process_gmail_signup' ) );
