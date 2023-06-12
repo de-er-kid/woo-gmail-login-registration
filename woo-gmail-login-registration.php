@@ -36,9 +36,11 @@ class WooCommerce_Gmail_Login {
     // Add Gmail Login button to WooCommerce Login Form
     public function add_gmail_login_button() {
         ?>
-        <a href="<?php echo esc_url( $this->get_gmail_login_url() ); ?>" class="button gmail-login-button">
-            <?php esc_html_e( 'Sign in with Gmail', 'woocommerce-gmail-login' ); ?>
-        </a>
+	<p class="form-row social-signup">
+		<a href="<?php echo esc_url( $this->get_gmail_login_url() ); ?>" class="button gmail-login-button">
+		    <?php esc_html_e( 'Sign in with Gmail', 'woocommerce-gmail-login' ); ?>
+		</a>
+	</p>
         <?php
     }
 
@@ -132,7 +134,7 @@ class WooCommerce_Gmail_Login {
     // Add Gmail Signup button to WooCommerce Registration Form
     public function add_gmail_signup_button() {
         ?>
-        <p class="form-row">
+        <p class="form-row social-signup">
             <a href="<?php echo esc_url( $this->get_gmail_login_url() ); ?>" class="button gmail-signup-button">
                 <?php esc_html_e( 'Sign up with Gmail', 'woocommerce-gmail-login' ); ?>
             </a>
