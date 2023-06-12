@@ -1,0 +1,92 @@
+/* social-login-main-parrent */
+.social-login {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.86);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 900px) {
+  .social-login {
+    -moz-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* social-login hr */
+.social-login-hr {
+    margin: 0 0 1em 0;
+    text-align: center;
+    display: flex !important;
+    flex-wrap: nowrap;
+    -moz-box-align: center;
+    align-items: center;
+    gap: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: rgb(140, 146, 156);
+  }
+  
+  .social-login-hr::before,
+  .social-login-hr::after {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(227, 229, 231);
+    -moz-box-flex: 1;
+    flex-grow: 1;
+  }
+
+/* social-login button */
+.social-login a {
+  border: 0.01em solid rgb(204, 204, 204)!important;
+  border-radius: 0.3em!important;
+  background-color: #00000000!important;
+  text-align: left;
+  font-size: 1.4em;
+  line-height: 2.4em;
+  color: rgb(30, 33, 42)!important;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.social-login a:hover {
+  background-color: #00000011!important;
+}
+
+@media screen and (min-width: 900px) {
+  .social-login a {
+    margin-bottom: 0.8em;
+  }
+}
+
+/* social-login button icon */
+.social-login img {
+  width: 2em;
+  margin-right: 0.5em;
+  padding: 0;
+  max-width: 100%;
+  border-style: none;
+  vertical-align: middle;
+}
+
+/* social-login button text */
+.social-login span {
+  line-height: 3.2;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 900px) {
+  .social-login span {
+    display: initial;
+  }
+}
