@@ -34,21 +34,21 @@
  defined( 'ABSPATH' ) || exit;
 
  // Register activation hook
- register_activation_hook( __FILE__, array( 'WooCommerce_Social_Login', 'activate' ) );
+ register_activation_hook( __FILE__, array( 'WooCommerce_Social_Login', 'activate' ) )
  
  // Register deactivation hook
  register_deactivation_hook( __FILE__, array( 'WooCommerce_Social_Login', 'deactivate' ) );
  
  // Include the main WooCommerce_Social_Login class.
- if ( ! class_exists( 'WooCommerce_Social_Login', false ) ) {
-     include_once plugin_dir_path( __FILE__ ) . 'includes/class-woocommerce-social-login.php';
+ if (! class_exists( 'WooCommerce_Social_Login', false ) ) {
+     include_once plugin_dir_path( __FILE__ )  'includes/class-woocommerce-social-login.php';
  }
  
  /**
   * Load the plugin text domain for translation.
   */
  function woocommerce_social_login_load_textdomain() {
-     load_plugin_textdomain( 'woocommerce-social-login', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+     load_plugin_text_domain( 'woocommerce-social-login', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
  }
  add_action( 'plugins_loaded', 'woocommerce_social_login_load_textdomain' );
 
